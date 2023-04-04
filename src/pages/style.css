@@ -1,0 +1,150 @@
+
+
+.canvas{
+    height: 60% !important;
+}
+.canvasbody{
+    height: 800px !important;;
+}
+.images{
+    height: 150% !important;
+    width:100%
+}
+#player{
+    width:200px !important;
+    height:50px !important;
+    margin-left: 20px !important;
+    margin-bottom: 10px;
+}
+#timer{
+    position: absolute !important;
+    top: 88% !important;
+    font-size: 30px;
+    margin-left: 45%;
+    /* border: 2px solid blue; */
+    /* padding: 2px 15px 2px 15px; */
+   
+    color: red;
+    font-weight: bolder;
+}
+
+#timer2{
+    position: absolute !important;
+    top: 88% !important;
+    font-size: 22px;
+    margin-left: 40%;
+    /* border: 2px solid  blue;
+    padding: 2px 15px 2px 15px; */
+    font-weight: bolder;
+    /* background-color: black; */
+    color: red;
+}
+
+
+#modalbtn{
+
+    padding-top: 15px !important;
+    
+  }
+#modalbox{
+    height:90%;
+    width:90%
+  }
+  #teammodal{
+    height:90%;
+    width:30%
+  }
+
+  .playervalue,.playervalue1{
+    width: max-content;
+    margin-bottom: 6px !important;
+    /* padding-left: 5px; */
+    /* padding-top: 2px; */
+    font-size: 17px;
+    font-weight: bold;
+    color: blue;
+  }
+  .playervalue{
+    list-style: decimal;
+  }
+
+  .teamname{
+    width:max-content;
+    font-weight: bold;
+  }
+
+  #none,#hello{
+    display:none !important;
+    
+  }
+
+  #modalab{
+    width:70%;
+    height: 60%;
+  }
+
+  #modalteam{
+    position: absolute;
+    top:5%;
+  left:30%;
+    border:2px solid red;
+    width: 30%;
+    height: 90%;
+
+   
+  }
+
+  #logomodaldiv{
+    margin-top: 15%;
+  }
+  .logo{
+    width:100px !important;
+   position: relative;
+   left: 30%;
+   
+    
+    
+  }
+
+  #showTeam{
+    background-color: black;
+    color:white;
+    position: absolute;
+    top:50%
+  }
+
+  #teambtn{
+    font-size: 22px;
+    margin-right: 10px;
+    margin-top: 15px !important;
+    position: relative;
+    top: 12px;
+    cursor:pointer ;
+    padding: 2px;
+    /* background-color: #212529; */
+    color: black;
+    /* border: 1px solid #212529; */
+  }
+  #end{
+    display: none;
+  }
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+.ModalTest {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+
+}
+
+#modcontent{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
