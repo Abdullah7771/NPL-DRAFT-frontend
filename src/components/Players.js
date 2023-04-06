@@ -8,9 +8,12 @@ let allrounders = [];
 let emerging = [];
 let youngguns = [];
 
+
+import {BASE_URL} from "../App"
+
 //getting players with category through api and pushing into specified category//
 const printKeepers = async () => {
-    const data = await fetch("http://localhost:5000/api/player/type/keeper")
+    const data = await fetch(`${BASE_URL}/api/player/type/keeper`)
         .then((response) => response.json())
         .then((player) => {
             //keepers from api pushing in keepers array //
@@ -26,7 +29,7 @@ printKeepers();
 
 
 const printBowlers = async () => {
-    const data = await fetch("http://localhost:5000/api/player/type/bowler")
+    const data = await fetch(`${BASE_URL}/api/player/type/bowler`)
         .then((response) => response.json())
         .then((player) => {
             for (var i = 0; i < player.player.length; i++) {
@@ -40,7 +43,7 @@ printBowlers();
 
 
 const printBatsman = async () => {
-    const data = await fetch("http://localhost:5000/api/player/type/batsman")
+    const data = await fetch(`${BASE_URL}/api/player/type/batsman`)
         .then((response) => response.json())
         .then((player) => {
             for (var i = 0; i < player.player.length; i++) {
@@ -54,7 +57,7 @@ printBatsman();
 
 
 const printAllRounders = async () => {
-    const data = await fetch("http://localhost:5000/api/player/type/allrounder")
+    const data = await fetch(`${BASE_URL}/api/player/type/allrounder`)
         .then((response) => response.json())
         .then((player) => {
             for (var i = 0; i < player.player.length; i++) {
@@ -69,7 +72,7 @@ printAllRounders();
 
 
 const printEmerging = async () => {
-    const data = await fetch("http://localhost:5000/api/player/type/emerging")
+    const data = await fetch(`${BASE_URL}/api/player/type/emerging`)
         .then((response) => response.json())
         .then((player) => {
             for (var i = 0; i < player.player.length; i++) {
@@ -85,7 +88,7 @@ printEmerging();
 
 
 const printYoungGuns = async () => {
-    const data = await fetch("http://localhost:5000/api/player/type/youngguns")
+    const data = await fetch(`${BASE_URL}/api/player/type/youngguns`)
         .then((response) => response.json())
         .then((player) => {
             for (var i = 0; i < player.player.length; i++) {

@@ -7,12 +7,12 @@ import team4 from "../images/janbaz.png"
 import team5 from "../images/royals.png"
 import team6 from "../images/aces.png"
 import { Link } from 'react-router-dom';
-
+import {BASE_URL} from "../App"
 
 
 //Emptying All teams from database to start a new draft with new players //
 const EmptyTeams = async (id) => {
-  const data = await fetch("http://localhost:5000/api/team/delete", {
+  const data = await fetch("${BASE_URL}/api/team/delete", {
     headers: {
       'Content-Type': 'application/json',
     },

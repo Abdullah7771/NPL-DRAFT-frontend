@@ -4,11 +4,11 @@ import { ChildModal3, ChildModal2 } from './NestedModal';
 
 //defining teams array. 6 teams==6 empty objects for data to receive//
 let teamsData = [{}, {}, {}, {}, {}, {}];
-
+import {BASE_URL} from "../App";
 
 //fetching all teams and putting into teams array//
 const printTeams = async () => {
-  const data = await fetch("http://localhost:5000/api/team/fetchall")
+  const data = await fetch(`${BASE_URL}/api/team/fetchall`)
     .then((response) => response.json())
     .then((teams) => {
       for (var i = 0; i < teams.length; i++) {
@@ -29,7 +29,7 @@ printTeams();
 
 //pushing player into database (team array) after selecting it into team//
 const pushPlayer = async (id, name) => {
-  const data = await fetch(`http://localhost:5000/api/team/add/${id}`, {
+  const data = await fetch(`${BASE_URL}/api/team/add/${id}`, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -51,7 +51,7 @@ const pushPlayer = async (id, name) => {
 //not works on last pick of each round due to rotating images after each round..//
 //works for first 5 picks of each round//
 const UndoPickTeam = async (id) => {
-  const data = await fetch(`http://localhost:5000/api/team/undopick/${id}`, {
+  const data = await fetch(`${BASE_URL}/api/team/undopick/${id}`, {
     headers: {
       'Content-Type': 'application/json',
     },

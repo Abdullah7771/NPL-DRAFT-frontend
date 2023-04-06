@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {BASE_URL} from "../App"
 
 //define arrays of teams//
 let united = [];
@@ -10,10 +10,11 @@ let sultan = [];
 let royals = [];
 
 
+
 //push data coming from api into teams array using their team id//
-//https://localhost:5000http://localhost:5000/api/team/players/1 //
+//${BASE_URL}/api/team/players/1 //
 const TeamUnited = async () => {
-    const data = await fetch("http://localhost:5000/api/team/players/1")
+    const data = await fetch(`${BASE_URL}/api/team/players/1`)
         .then((response) => response.json())
         .then((team) => {
             //slice[0]: copies from 0 index to end if second arg. is not given//
@@ -33,7 +34,7 @@ TeamUnited();
 
 
 const TeamShaneNawait = async () => {
-    const data = await fetch("http://localhost:5000/api/team/players/2")
+    const data = await fetch("${BASE_URL}/api/team/players/2")
         .then((response) => response.json())
         .then((team) => {
               //slice[0]: copies from 0 index to end if second arg. is not given//
@@ -49,7 +50,7 @@ TeamShaneNawait();
 
 
 const TeamSultan = async () => {
-    const data = await fetch("http://localhost:5000/api/team/players/3")
+    const data = await fetch(`${BASE_URL}/api/team/players/3`)
         .then((response) => response.json())
         .then((team) => {
               //slice[0]: copies from 0 index to end if second arg. is not given//
@@ -63,7 +64,7 @@ TeamSultan();
 
 
 const TeamJanbaz = async () => {
-    const data = await fetch("http://localhost:5000/api/team/players/4")
+    const data = await fetch(`${BASE_URL}/api/team/players/4`)
         .then((response) => response.json())
         .then((team) => {
             janbaz = team[0].players.slice(0);
@@ -76,7 +77,7 @@ TeamJanbaz();
 
 
 const TeamRoyals = async () => {
-    const data = await fetch("http://localhost:5000/api/team/players/5")
+    const data = await fetch(`${BASE_URL}/api/team/players/5`)
         .then((response) => response.json())
         .then((team) => {
             royals = team[0].players.slice(0);
@@ -91,7 +92,7 @@ TeamRoyals();
 
 
 const TeamAces = async () => {
-    const data = await fetch("http://localhost:5000/api/team/players/6")
+    const data = await fetch(`${BASE_URL}/api/team/players/6`)
         .then((response) => response.json())
         .then((team) => {
             aces = team[0].players.slice(0);

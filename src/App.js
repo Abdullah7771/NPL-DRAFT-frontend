@@ -4,6 +4,8 @@ import MainPage from './pages/MainPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/home';
 
+let BASE_URL="https://npl-draft-backend.onrender.com/";
+
 import {
   BrowserRouter,
   Routes,
@@ -33,3 +35,4 @@ function App() {
 }
 
 export default App;
+export {BASE_URL};
