@@ -12,7 +12,7 @@ import {
 
 import EndingPage from './pages/EndingPage';
 
-const BASE_URL="https://npl-draft-backend.onrender.com";
+export const BASE_URL="https://npl-draft-backend.onrender.com";
 
 
 function App() {
@@ -34,4 +34,4 @@ function App() {
 }
 
 export default App;
-export {BASE_URL};
+
