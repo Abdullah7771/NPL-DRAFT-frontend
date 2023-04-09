@@ -12,7 +12,7 @@ import {
 
 import EndingPage from './pages/EndingPage';
 
-let BASE_URL="https://npl-draft-backend.onrender.com";
+const BASE_URL="https://npl-draft-backend.onrender.com";
 
 
 function App() {
