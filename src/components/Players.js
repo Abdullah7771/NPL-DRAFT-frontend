@@ -16,7 +16,7 @@ let youngguns = [];
 const printKeepers = async () => {
     try {
       console.log(BASE_URL);
-      const response = await fetch(`${BASE_URL}/api/player/type/keeper`);
+      const response = await fetch("https://npl-draft-backend.onrender.com/api/player/type/keeper");
       const data = await response.json();
   
       for (var i = 0; i < data.player.length; i++) {
@@ -35,7 +35,7 @@ printKeepers();
 
 const printBowlers = async () => {
     console.log(BASE_URL);
-    const data = await fetch(`${BASE_URL}/api/player/type/bowler`)
+    const data = await fetch("https://npl-draft-backend.onrender.com/api/player/type/bowler")
         .then((response) => response.json())
         .then((player) => {
             for (var i = 0; i < player.player.length; i++) {
@@ -49,7 +49,7 @@ printBowlers();
 
 
 const printBatsman = async () => {
-    const data = await fetch(`${BASE_URL}/api/player/type/batsman`)
+    const data = await fetch(`https://npl-draft-backend.onrender.com/api/player/type/batsman`)
         .then((response) => response.json())
         .then((player) => {
             for (var i = 0; i < player.player.length; i++) {
@@ -63,7 +63,7 @@ printBatsman();
 
 
 const printAllRounders = async () => {
-    const data = await fetch(`${BASE_URL}/api/player/type/allrounder`)
+    const data = await fetch("https://npl-draft-backend.onrender.com/api/player/type/allrounder")
         .then((response) => response.json())
         .then((player) => {
             for (var i = 0; i < player.player.length; i++) {
@@ -78,7 +78,7 @@ printAllRounders();
 
 
 const printEmerging = async () => {
-    const data = await fetch(`${BASE_URL}/api/player/type/emerging`)
+    const data = await fetch("https://npl-draft-backend.onrender.com/api/player/type/emerging")
         .then((response) => response.json())
         .then((player) => {
             for (var i = 0; i < player.player.length; i++) {
@@ -94,7 +94,7 @@ printEmerging();
 
 
 const printYoungGuns = async () => {
-    const data = await fetch(`${BASE_URL}/api/player/type/youngguns`)
+    const data = await fetch("https://npl-draft-backend.onrender.com/api/player/type/youngguns")
         .then((response) => response.json())
         .then((player) => {
             for (var i = 0; i < player.player.length; i++) {

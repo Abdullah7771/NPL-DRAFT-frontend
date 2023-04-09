@@ -7,13 +7,14 @@ import team4 from "../images/janbaz.png"
 import team5 from "../images/royals.png"
 import team6 from "../images/aces.png"
 import { Link } from 'react-router-dom';
-import "../App";
 import {BASE_URL} from "../App"
+import "../App";
+
 
 
 //Emptying All teams from database to start a new draft with new players //
 const EmptyTeams = async (id) => {
-  const data = await fetch(`${BASE_URL}/api/team/delete`, {
+  const data = await fetch("https://npl-draft-backend.onrender.com/api/team/delete", {
     headers: {
       'Content-Type': 'application/json',
     },
