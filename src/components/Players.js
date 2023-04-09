@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {BASE_URL} from "../App"
 //defining players category arrays//
 let keepers = [];
 let bowlers = [];
@@ -9,7 +9,7 @@ let emerging = [];
 let youngguns = [];
 
 
-import {BASE_URL} from "../App"
+
 
 //getting players with category through api and pushing into specified category//
 const printKeepers = async () => {

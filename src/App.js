@@ -3,9 +3,6 @@ import Teams from './pages/teams';
 import MainPage from './pages/MainPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/home';
-
-let BASE_URL="https://npl-draft-backend.onrender.com/";
-
 import {
   BrowserRouter,
   Routes,
@@ -14,6 +11,8 @@ import {
 } from "react-router-dom";
 
 import EndingPage from './pages/EndingPage';
+
+let BASE_URL="https://npl-draft-backend.onrender.com/";
 
 
 function App() {

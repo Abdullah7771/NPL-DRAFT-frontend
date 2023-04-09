@@ -3,8 +3,8 @@ import { TeamUnited, TeamAces, TeamJanbaz, TeamRoyals, TeamShaneNawait, TeamSult
 import { ChildModal3, ChildModal2 } from './NestedModal';
 
 //defining teams array. 6 teams==6 empty objects for data to receive//
-let teamsData = [{}, {}, {}, {}, {}, {}];
 import {BASE_URL} from "../App";
+let teamsData = [{}, {}, {}, {}, {}, {}];
 
 //fetching all teams and putting into teams array//
 const printTeams = async () => {
