@@ -13,7 +13,7 @@ let youngguns = [];
 
 //getting players with category through api and pushing into specified category//
 const printKeepers = async () => {
-    const data = await fetch("https://npl-draft-backend.onrender.com/api/player/type/keeper")
+    const data = await fetch(`${BASE_URL}/api/player/type/keeper`)
         .then((response) => response.json())
         .then((player) => {
             //keepers from api pushing in keepers array //
