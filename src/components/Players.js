@@ -13,17 +13,18 @@ let youngguns = [];
 
 //getting players with category through api and pushing into specified category//
 const printKeepers = async () => {
-    const data = await fetch(`${BASE_URL}/api/player/type/keeper`)
-        .then((response) => response.json())
-        .then((player) => {
-            //keepers from api pushing in keepers array //
-            for (var i = 0; i < player.player.length; i++) {
-                keepers.push(player.player[i].name);
-            }
-            return player;
-        });
-
-};
+    try {
+      const response = await fetch(`${BASE_URL}/api/player/type/keeper`);
+      const data = await response.json();
+  
+      for (var i = 0; i < data.player.length; i++) {
+        keepers.push(data.player[i].name);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
 printKeepers();
 
 
