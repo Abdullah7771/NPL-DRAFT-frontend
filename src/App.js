@@ -21,9 +21,9 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="teams" element={<Teams />} />
-          <Route path="round" element={<MainPage />} />
-          <Route path="end" element={<EndingPage />} />
+          <Route path="/teams" element={<Teams />} />
+          <Route path="/round" element={<MainPage />} />
+          <Route path="/end" element={<EndingPage />} />
           <Route path="/" element={<Home />}>
           </Route>
         </Routes>
