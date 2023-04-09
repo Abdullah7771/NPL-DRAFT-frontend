@@ -3,6 +3,7 @@ import { TeamUnited, TeamAces, TeamJanbaz, TeamRoyals, TeamShaneNawait, TeamSult
 import { ChildModal3, ChildModal2 } from './NestedModal';
 
 //defining teams array. 6 teams==6 empty objects for data to receive//
+import "../App";
 import {BASE_URL} from "../App";
 let teamsData = [{}, {}, {}, {}, {}, {}];
 

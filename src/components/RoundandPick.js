@@ -1,4 +1,5 @@
 import React from "react";
+import "../App";
 import {BASE_URL} from "../App"
 // 78 rounds to 78 objects created to receive data from apis //
 //Must do otherwise error saying 0 number of arrays to put data into//

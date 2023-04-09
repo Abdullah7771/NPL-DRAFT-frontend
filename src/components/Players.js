@@ -1,4 +1,5 @@
 import React from 'react'
+import "../App";
 import {BASE_URL} from "../App"
 //defining players category arrays//
 let keepers = [];
@@ -14,6 +15,7 @@ let youngguns = [];
 //getting players with category through api and pushing into specified category//
 const printKeepers = async () => {
     try {
+      console.log(BASE_URL);
       const response = await fetch(`${BASE_URL}/api/player/type/keeper`);
       const data = await response.json();
   
@@ -30,6 +32,7 @@ printKeepers();
 
 
 const printBowlers = async () => {
+    console.log(BASE_URL);
     const data = await fetch(`${BASE_URL}/api/player/type/bowler`)
         .then((response) => response.json())
         .then((player) => {
